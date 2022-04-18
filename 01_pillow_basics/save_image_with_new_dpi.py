@@ -3,8 +3,8 @@
 import pathlib
 
 from PIL import Image
-
-
+input_file_path = "flower.jpg"
+output_file_path = "../out"
 def image_converter(input_file_path, output_file_path, dpi):
     image = Image.open(input_file_path)
     image.save(output_file_path, dpi=dpi)
